@@ -15,6 +15,6 @@ span {
   float: right;
 }
 </style>
-<div>
+<div class="div">
 <span>float: right;</span>
 </div>
