@@ -10,6 +10,7 @@ The followings are some html codes
 .div {
   background-color: yellow;
   color: red;
+  overflow: hidden;
 }
 span {
   float: right;
