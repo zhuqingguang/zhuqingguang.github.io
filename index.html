@@ -1,9 +1,42 @@
----
-layout: default
-title: Zhu Qingguang
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>朱庆广的个人网站</title>
+    <link rel="stylesheet" href="/assets/css/home.css">
+  </head>
 
-<div class="blurb">
-  <h1> Hi, I am Zhu Qingguang , a coder from <em>BUPT</em></h1>
-  <p>I want to be good Front-End programmer. <a href="/about">Read more about me.</a></p>
-<div>
+  <body>
+    <div class="container">
+      <header>
+        <h1>朱庆广的个人网站</h1>
+        <p>Zhu Qingguang's Personal Website</p>
+      </header>
+      <nav>
+        <ul>
+          <li> >> </li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/about">/ About</a></li>
+        </ul>
+      </nav>
+      <footer>
+        <ul>
+          <li><a href="/">Contact</a></li>
+          <li>|</li>
+          <li>zhuqingguang.github.io</li>
+        </ul>
+      </footer>
+    </div>
+    <script>
+      function changeBackground(){
+        var body = document.body;
+        body.style.backgroundSize = "cover";
+        body.style.backgroundRepeat = "no-repeat";
+        body.style.backgroundImage = "url(/assets/home-image/"+ Math.ceil(Math.random() * 11)+".jpg)";
+      }
+      // changeBackground();
+      setInterval(changeBackground, 3000);
+    </script>
+  </body>
+
+</html>
