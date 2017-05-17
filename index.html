@@ -34,8 +34,8 @@
         body.style.backgroundRepeat = "no-repeat";
         body.style.backgroundImage = "url(/assets/home-image/"+ Math.ceil(Math.random() * 11)+".jpg)";
       }
-      // changeBackground();
-      setInterval(changeBackground, 3000);
+      changeBackground();
+      document.body.onclick = changeBackground;
     </script>
   </body>
 
