@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{page.title}}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/common/font-awesome.css">
+</head>
+
+<body>
+  <header class="header">
+    <button type="button" name="button" class="icon-reorder"></button>
+    <h1 class="logo">朱庆广的个人博客</h1>
+    <nav class="top-nav">
+      <a href="#" class="nav-link">首页</a>
+      <a href="#" class="nav-link">博客</a>
+      <a href="#" class="nav-link">笔记</a>
+      <a href="#" class="nav-link">关于</a>
+      <a href="#" class="nav-link"><i class="icon-rss"></i></a>
+    </nav>
+  </header>
+  <aside class="sidebar">
+    <div class="avator">
+      <img src="" alt="">
+    </div>
+    <h1 class="name">朱庆广</h1>
+    <p class="signature">坚持就是胜利</p>
+    <div class="social">
+      <a href="#"><i class="icon-github"></i>Github</a>
+      <a href="#"><i class="icon-envelope"></i>Email</a>
+      <a href="#"><i class="icon-pinterest"></i>Weibo</a>
+      <a href="#"><i class="icon-twitter"></i>Twitter</a>
+    </div>
+    <div class="website-nav">
+      <p>站点导航</p>
+      <ul class="nav-ul">
+        <li><a href="#">主页</a></li>
+        <li><a href="#">博客</a></li>
+        <li><a href="#">笔记</a></li>
+        <li><a href="#">关于</a></li>
+      </ul>
+    </div>
+    <div class="blog-category">
+      <p>分类</p>
+      <ul class="category-list">
+        {% for category in site.categories %}
+          <li><a href="/blog/category.html?category={{category | first }}">{{ category | first }}<span class="category-size">{{ category | last | size }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+  <main class="main-content">
+    
+  </main>
+</body>
+
+</html>

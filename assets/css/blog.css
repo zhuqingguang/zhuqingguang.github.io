@@ -1,0 +1,68 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5d5; }
+
+body {
+  position: relative;
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 1122px;
+  margin: 0 auto; }
+
+body::before {
+  content: "";
+  display: none;
+  height: 1px; }
+
+.header {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin: 0 2px;
+  border-bottom: 1px solid #ccc; }
+  .header .icon-reorder {
+    flex: 0 0 auto;
+    border: none;
+    background-color: transparent;
+    margin-top: 5px; }
+  .header .logo {
+    flex: 0 0 auto;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    color: #555;
+    font-weight: 100;
+    margin-left: 15px; }
+  .header .top-nav {
+    flex: 1 1 auto;
+    height: 100%; }
+    .header .top-nav a.nav-link {
+      display: none;
+      margin-top: 10px;
+      line-height: 40px;
+      color: #888;
+      text-decoration: none;
+      vertical-align: bottom; }
+    .header .top-nav a:last-child {
+      display: block;
+      float: right;
+      margin-right: 50px; }
+
+.sidebar {
+  position: absolute;
+  margin-top: 51px; }
+
+.main-content {
+  position: absolute;
+  width: 100%;
+  margin-top: 51px; }
+
+/* <= 768px*/
+/*>= 992px*/
+/*>= 1200px*/
+
+/*# sourceMappingURL=blog.css.map */
