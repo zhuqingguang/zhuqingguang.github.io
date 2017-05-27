@@ -3,11 +3,13 @@ layout: post
 title: "CSS居中总结"
 date: 2017-05-17
 categories: [CSS,MyNotes]
-
+tags: [CSS, 布局]
 ---
 
-## 各种方式对比总结
+### 各种方式对比总结
 [原文](https://codepen.io/shshaw/full/gEiDt)
+详细讲解了各种水平和垂直居中的方法，并给出了浏览器兼容性和优缺点。
+<!-- more -->
 <table class="table">
         <thead>
           <tr>
@@ -77,7 +79,6 @@ categories: [CSS,MyNotes]
           </tr>
         </tbody>
       </table>      
-
 ## absolute centering
 - html
 ```

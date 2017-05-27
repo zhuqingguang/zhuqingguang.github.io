@@ -1,3 +1,4 @@
 name: Zhu Qingguang
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+excerpt_separator:  '<!-- more -->'

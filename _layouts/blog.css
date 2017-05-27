@@ -1,21 +1,21 @@
 /*
 Error: Invalid GBK character "\xE6"
-        on line 15 of F:\mywork\mywebsite\zhuqingguang.github.io\_layouts\blog.html
+        on line 14 of F:\mywork\mywebsite\zhuqingguang.github.io\_layouts\blog.html
 
+9: </head>
 10: 
 11: <body>
 12:   <header class="header">
-13:     <!-- <span class="icon-reorder"></span> -->
-14:     <button type="button" name="button" class="icon-reorder"></button>
-15:     <h1 class="logo">朱庆广的个人博客</h1>
-16:     <nav class="top-nav">
-17:       <a href="#" class="nav-link">首页</a>
-18:       <a href="#" class="nav-link">博客</a>
-19:       <a href="#" class="nav-link">笔记</a>
-20:       <a href="#" class="nav-link">关于</a>
+13:       <a class="icon-reorder" id="btn-toggleSidebar"></a>
+14:       <h1 class="logo">朱庆广的个人博客</h1>
+15:       <nav class="top-nav">
+16:         <a href="#" class="nav-link">首页</a>
+17:         <a href="#" class="nav-link">博客</a>
+18:         <a href="#" class="nav-link">笔记</a>
+19:         <a href="#" class="nav-link">关于</a>
 
 Backtrace:
-F:\mywork\mywebsite\zhuqingguang.github.io\_layouts\blog.html:15
+F:\mywork\mywebsite\zhuqingguang.github.io\_layouts\blog.html:14
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1297:in `block in find_encoding_error'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each'
@@ -37,4 +37,4 @@ C:/tools/ruby23/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE6\"\A         on line 15 of F:\mywork\mywebsite\zhuqingguang.github.io\_layouts\blog.html\A \A 10: \A 11: <body>\A 12:   <header class=\"header\">\A 13:     <!-- <span class=\"icon-reorder\"></span> -->\A 14:     <button type=\"button\" name=\"button\" class=\"icon-reorder\"></button>\A 15:     <h1 class=\"logo\">朱庆广的个人博客</h1>\A 16:     <nav class=\"top-nav\">\A 17:       <a href=\"#\" class=\"nav-link\">首页</a>\A 18:       <a href=\"#\" class=\"nav-link\">博客</a>\A 19:       <a href=\"#\" class=\"nav-link\">笔记</a>\A 20:       <a href=\"#\" class=\"nav-link\">关于</a>"; }
+  content: "Error: Invalid GBK character \"\xE6\"\A         on line 14 of F:\mywork\mywebsite\zhuqingguang.github.io\_layouts\blog.html\A \A 9: </head>\A 10: \A 11: <body>\A 12:   <header class=\"header\">\A 13:       <a class=\"icon-reorder\" id=\"btn-toggleSidebar\"></a>\A 14:       <h1 class=\"logo\">朱庆广的个人博客</h1>\A 15:       <nav class=\"top-nav\">\A 16:         <a href=\"#\" class=\"nav-link\">首页</a>\A 17:         <a href=\"#\" class=\"nav-link\">博客</a>\A 18:         <a href=\"#\" class=\"nav-link\">笔记</a>\A 19:         <a href=\"#\" class=\"nav-link\">关于</a>"; }
