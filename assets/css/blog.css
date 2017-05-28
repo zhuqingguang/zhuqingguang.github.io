@@ -17,7 +17,8 @@ body {
   min-width: 280px;
   margin: 0 auto;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
 
 body::before {
   content: "";
