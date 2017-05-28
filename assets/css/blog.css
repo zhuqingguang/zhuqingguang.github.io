@@ -10,7 +10,7 @@ html, body {
 body {
   position: relative;
   width: 100%;
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px georgia, serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 1122px;
   min-width: 280px;
   margin: 0 auto;
