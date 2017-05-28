@@ -32,7 +32,7 @@
     border-top: 1px solid #d3d3d3;
     color: #999; }
     .article .article-footer .footer-group {
-      flex: 1 0 auto;
+      flex: 0 0 auto;
       text-align: left;
       font-size: 14px; }
       .article .article-footer .footer-group time {

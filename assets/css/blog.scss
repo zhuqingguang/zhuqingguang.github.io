@@ -51,6 +51,12 @@ $headerHeigth: 51px;
   border-bottom: 1px solid #ccc;
   background-color: #f5f5d5;
   z-index: 100;
+  #btn-toggleSidebarLeft {
+    display: none;
+  }
+  #btn-toggleSidebarTop {
+    display: inline-block;
+  }
   .icon-reorder {
     flex: 0 0 auto;
     border: none;
@@ -90,114 +96,131 @@ $headerHeigth: 51px;
 }
 .sidebar {
   position:fixed;
-  width: 240px;
+  width: 100%;
+  transform: translateY(-100%);
   margin-right: 10px;
   box-sizing: border-box;
   margin-top: $headerHeigth;
-  margin-left: -250px;
-  transition: margin-left .5s ease;
+  transition: all .5s ease;
   border: 1px solid transparent;
-  .personel {
-    background-color: #deebf7;
-    border-radius: 10px;
-    border: 1px solid transparent;
-  }
-  .avator {
-    box-sizing: padding-box;
-    width: 150px;
-    height: 150px;
-    padding: 1px;
-    margin: 10px auto 10px auto;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    img {
-      width: 150px;
-      height: 150px;;
-      border-radius: 50%;
+  background-color: #f5f5d5;
+  z-index: 4;
+  .side-container {
+    width: 90%;
+    // background-color: #deebf7;
+    margin: 0 auto;
+    border-radius: 15px;
+    &>div {
+      width: 250px;
+      margin: 0 auto;
     }
-  }
-  p {
-    margin: 10px;
-  }
-  .name {
-    margin: 10px auto;
-    color: #333;
-    font-weight: normal;
-  }
-  .social {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 20px;
-    .flex-row {
-      width: 99%;
-      display: flex;
-      justify-content: space-around;
+    .personel {
+      background-color: #deebf7;
+      border-radius: 10px;
+      border: 1px solid transparent;
       margin-bottom: 10px;
-      a {
-          width: 90px;
-          color: #50504f;
-          text-decoration: none;
-          i {
-            margin-right: 10px;
-          }
+      .avator {
+        box-sizing: padding-box;
+        width: 150px;
+        height: 150px;
+        padding: 1px;
+        margin: 10px auto 10px auto;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        img {
+          width: 150px;
+          height: 150px;;
+          border-radius: 50%;
+        }
       }
-    }
-  }
-  .website-nav {
-    margin-top: 10px;
-    padding: 10px 0;
-    background-color: #deebf7;
-    border-radius: 10px;
-    p {
-      margin: 0 auto 10px 10px;
-    }
-    .nav-ul {
-      margin: 10px auto 10px auto;
-      padding-left: 20px;
-      li {
-        display: inline-block;
-        width: 35px;
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: #50504f;
+      p {
+        margin: 10px;
+      }
+      .name {
+        margin: 10px auto;
+        color: #333;
+        font-weight: normal;
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        .flex-row {
+          width: 99%;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 10px;
+          a {
+              width: 90px;
+              color: #50504f;
+              text-decoration: none;
+              i {
+                margin-right: 10px;
+              }
+          }
         }
       }
     }
-  }
-  .blog-category {
-    margin: 10px auto 0 auto;
-    background-color: #deebf7;
-    border-radius: 10px;
-    padding: 10px 0;
-    p {
-      margin: 0  auto 10px 10px;
+
+    .website-nav {
+      margin-top: 10px;
+      padding: 10px 00px;
+      background-color: #deebf7;
+      border-radius: 10px;
+      p {
+        margin: 0 auto 10px 10px;
+      }
+      .nav-ul {
+        margin: 10px auto 10px auto;
+        padding-left: 20px;
+        display: flex;
+        li {
+          display: inline-block;
+          flex: 1 0 auto;
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: #50504f;
+          }
+        }
+      }
     }
-    .category-list {
+    .blog-category {
       margin: 10px auto 0 auto;
-      padding-left: 20px;
-      li {
-        list-style: none;
-        margin-bottom: 5px;
-        font-size: 14px;
-        a {
-          color: #50504f;
-          text-decoration: none;
-          span {
-            margin-left: 5px;
+      background-color: #deebf7;
+      border-radius: 10px;
+      padding: 10px 0;
+      p {
+        margin: 0  auto 10px 10px;
+      }
+      .category-list {
+        margin: 10px auto 0 auto;
+        padding-left: 20px;
+        li {
+          list-style: none;
+          margin-bottom: 5px;
+          font-size: 14px;
+          a {
+            color: #50504f;
+            text-decoration: none;
+            span {
+              margin-left: 5px;
+            }
           }
         }
-      }
-      li:last-child {
-        margin-bottom: 0;
-      }
-      li::before{
-        content: ">";
-        margin-right: 5px;
+        li:last-child {
+          margin-bottom: 0;
+        }
+        li::before{
+          content: ">";
+          margin-right: 5px;
+        }
       }
     }
   }
+
+
   .text-center {
     text-align: center;
   }
@@ -214,14 +237,23 @@ $headerHeigth: 51px;
 
 }
 .open-sidebar {
-  margin-left: 0;
+  margin-left: 240px;
 }
 .open-main {
-  margin-left: 250px;
+  margin-left: 240px;
+}
+.open-sidebar-top {
+  transform: translateY(0);
 }
 /*>= 992px*/
 @media screen and (min-width: 768px) {
   .header {
+    #btn-toggleSidebarLeft {
+      display: inline-block;
+    }
+    #btn-toggleSidebarTop {
+      display: none;
+    }
     .top-nav {
       display: flex;
       justify-content: flex-end;
@@ -231,19 +263,45 @@ $headerHeigth: 51px;
       }
     }
   }
+  .sidebar {
+    width: 240px;
+    margin-left: -240px;
+    transform: translateY(0%);
+    .side-container {
+      width: 100%;
+      &>div {
+        width: 240px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .open-sidebar {
+    margin-left: 0px;
+    transform: translateY(0%);
+  }
 }
 /* >= 768px*/
 @media screen and (min-width: 1024px) {
-  #btn-toggleSidebar {
-    display: none;
+  .header {
+    #btn-toggleSidebarTop, #btn-toggleSidebarLeft {
+      display: none;
+    }
   }
+
   .sidebar {
-    width: 180px;
+    width: 200px;
     margin-left: 20px;
+    .side-container {
+      width: 100%;
+      &>div {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
   }
   .main-content {
     margin-left: 220px;
-    width: calc(100% - 210px);
+    width: calc(100% - 230px);
   }
 }
 
