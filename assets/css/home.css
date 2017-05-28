@@ -29,7 +29,7 @@ body{
   height: auto;
   max-width: 960px;
   min-width: 200px;
-  width: 40%;
+  width: 90%;
   max-height: 60%;
   height: unset;
   background-color: rgba(0, 0, 0, 0.3);
@@ -64,7 +64,6 @@ nav {
 
 ul li {
   display: inline-block;
-  /*float: left;*/
   color: #fefefe;
 }
 a {
@@ -80,4 +79,14 @@ nav ul {
 footer ul{
   float: right;
   margin-right: 40px;
+}
+@media (min-width: 600px) {
+  .container {
+    width: 60%;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 50%;
+  }
 }
