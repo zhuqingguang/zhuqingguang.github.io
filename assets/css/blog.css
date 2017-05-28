@@ -200,7 +200,8 @@ body::before {
   margin-top: 51px;
   transition: margin-left .5s ease;
   margin-left: 0;
-  padding: 0px 20px 0 20px; }
+  padding: 0px 20px 0 20px;
+  overflow: auto; }
 
 .open-sidebar {
   margin-left: 240px; }
