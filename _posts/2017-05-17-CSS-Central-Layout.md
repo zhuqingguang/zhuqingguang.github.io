@@ -11,6 +11,7 @@ tags: [CSS, 布局]
 详细讲解了各种水平和垂直居中的方法，并给出了浏览器兼容性和优缺点。
 <!-- more -->
 ### 各种方式对比总结
+<div class="overflow-x">
 <table class="table">
         <thead>
           <tr>
@@ -80,7 +81,10 @@ tags: [CSS, 布局]
           </tr>
         </tbody>
       </table>      
+</div>
+
 ## absolute centering
+
 - html
 ```
   <div class="container">
@@ -101,6 +105,7 @@ tags: [CSS, 布局]
       top: 0; left: 0; bottom: 0; right: 0;
   }
 ```
+
 
  **注意**: 当没有指定内容块的具体的高度和宽度时，内容块会填满剩余空间。可以通过使用``max-height``来限制高度，也可以通过 display:table 来使高度由内容来决定，但是浏览器支持不是很好。
  - Not compatible with the Resizing technique.
