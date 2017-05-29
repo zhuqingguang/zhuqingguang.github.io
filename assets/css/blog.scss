@@ -1,7 +1,6 @@
 html,body {
   position: relative;
   width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #f5f5d5;
@@ -11,10 +10,12 @@ html,body {
 body {
   position: relative;
   width: 100%;
+  height: 100%;
   font: 16px georgia, serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 1122px;
   min-width: 280px;
   margin: 0 auto;
+  padding-bottom: 20px;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling:touch;
@@ -44,6 +45,7 @@ $headerHeigth: 51px;
 }
 .header {
   position: fixed;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -234,15 +236,15 @@ $headerHeigth: 51px;
   }
 }
 .main-content {
-  position: absolute;
+  position: relative;
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100%);
   height: calc(100% - 52px);
   margin-top: $headerHeigth;
-  transition: margin-left .5s ease;
+  transition: all .5s ease;
   margin-left: 0;
   padding:0px 20px 0 20px;
-  overflow: auto;
+  overflow-x: hidden;
 
 }
 .open-sidebar {
@@ -250,6 +252,7 @@ $headerHeigth: 51px;
 }
 .open-main {
   margin-left: 240px;
+  width: calc(100% - 240px);
 }
 .open-sidebar-top {
   transform: translateY(0);

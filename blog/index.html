@@ -31,3 +31,22 @@ title: Zhu Qingguang's Blog
   </footer>
 </article>
 {% endfor %}
+<button type="button" name="button" id="button">button</button>
+<script type="text/javascript">
+  var button = document.querySelector('#button');
+  button.addEventListener('click', function(){
+    var ajax;
+    if(window.XMLHttpRequest) {
+      ajax = new XMLHttpRequest();
+    }else {
+      ajax = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    ajax.open("GET", "app.json", true);
+    ajax.onreadystatechange = function (){
+      if(ajax.readyState == 4 && ajax.status == 200){
+        alert(JSON.parse(ajax.responseText));
+      }
+    };
+    ajax.send();
+  }, false)
+</script>

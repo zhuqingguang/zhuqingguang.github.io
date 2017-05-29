@@ -67,7 +67,6 @@
       {{content}}
     </main>
   </div>
-
   <img  class="fly-to-top" src="/assets/images/fly-to-top.png" alt="返回顶部" style="z-index:2;">
 </body>
 <script type="text/javascript">
@@ -80,6 +79,9 @@
   }, false);
   document.querySelector('.main-content').onresize = function(){
     document.body.style.position = 'relative';
+  };
+  document.body.onscroll = function(){
+    // console.log('hello');
   };
 </script>
 </html>

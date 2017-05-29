@@ -1,5 +1,7 @@
 .article {
   margin-bottom: 20px;
+  width: calc(100%);
+  margin: 0;
   .article-header {
     border-bottom: 1px dashed #888;
     h1 {
@@ -34,7 +36,7 @@
   }
   .article-footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 10px;
     border-top: 1px solid #d3d3d3;

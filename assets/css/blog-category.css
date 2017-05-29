@@ -1,5 +1,7 @@
 .article {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: calc(100%);
+  margin: 0; }
   .article .article-header {
     border-bottom: 1px dashed #888; }
     .article .article-header h1 {
@@ -26,7 +28,7 @@
         text-decoration: none; }
   .article .article-footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 10px;
     border-top: 1px solid #d3d3d3;

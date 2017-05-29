@@ -9,7 +9,7 @@ tags: [CSS]
 ---
 
 详细记录了CSS中与背景设置有关的属性和取值。
-<!-- more -->
+
 ### 设置背景内容
 - background-color: grba() | red | #ddd;
 - background-image: url();
@@ -35,3 +35,4 @@ tags: [CSS]
 
 ### 设置背景重复
 - **background-repeat**: repeat | no-repeat | round | space | repeat-x | repeat-y;
+<!-- more -->
