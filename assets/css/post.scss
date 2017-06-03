@@ -34,6 +34,22 @@ body {
     border-radius: 5px;
     background-color: pink;
   }
+  table {
+    border:1px solid #ddd;
+    border-collapse: collapse;
+    padding: 5px;
+    th {
+      width: 40%;
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+    td {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+  }
 }
 @media (min-width: 1024px) {
   .sidebar {
