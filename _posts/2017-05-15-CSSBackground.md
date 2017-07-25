@@ -3,10 +3,13 @@
 layout: post
 title: "CSS背景总结"
 date: 2017-05-15
-categories: [ CSS, MyNotes ]
+categories: [ CSS]
 datetime: 2017-05-15
 tags: [CSS]
 ---
+
+* content
+{:toc}
 
 详细记录了CSS中与背景设置有关的属性和取值。
 <!-- more -->
@@ -34,4 +37,5 @@ tags: [CSS]
   设置背景裁剪的范围，取值是与盒模型相对应的。
 
 ### 设置背景重复
-- **background-repeat**: repeat | no-repeat | round | space | repeat-x | repeat-y;
+- **background-repeat**: repeat|no-repeat|round|space|repeat-x|repeat-y;
+  设置背景的重复及排列方式

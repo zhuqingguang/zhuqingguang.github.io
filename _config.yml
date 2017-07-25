@@ -1,5 +1,27 @@
-name: Zhu Qingguang
-permalink: /blog/:year/:month/:day/:title
-excerpt_separator:  '<!-- more -->'
-markdown: kramdown
+# Site settings
+name: 胡不归的博客
+email: vac872089248@gmail.com
+author: Vac
+url: http://zhuqingguang.github.io
+resume_site: http://zhuqingguang.github.io/me/
+github: https://github.com/zhuqingguang/
+baseurl: ""  #根目录
+description: 平凡之路。
+motto: 平凡之路。
+#motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
+banner: 生如夏花之绚烂，死如秋叶之静美。
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+excerpt_separator:  '<!-- more -->' #文章摘要
+paginate: 8
+paginate_path: "page:num"
+gems: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+github_username: zhuqingguang
 highlighter: rouge
+markdown: kramdown
+FB:
+  comments :
+    provider : disqus
+    disqus :
+        short_name : zhuqingguang

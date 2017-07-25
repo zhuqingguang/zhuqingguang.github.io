@@ -2,9 +2,12 @@
 layout: post
 title: "CSS居中总结"
 date: 2017-05-17
-categories: [CSS,MyNotes]
-tags: [CSS, 布局]
+categories: [CSS]
+tags: [CSS]
 ---
+
+* content
+{:toc}
 
 
 [原文](https://codepen.io/shshaw/full/gEiDt)
