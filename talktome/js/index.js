@@ -57,8 +57,8 @@ var myBot = new BotUI('hello-world');
           return myBot.message.add ({
           delay: 1000,
           loading: true,
-          content: `Go ahead, try [my website](http://xiaokedada.com) or <a href="mailto:maoxiaoke@outlook.com">Email me.</a> </br>
-                    Here is my [Github address](https://github.com/maoxiaoke).`
+          content: `Go ahead, try [my website](http://zhuqingguang.github.io) or <a href="mailto:vac872089248@gmail.com">Email me.</a> </br>
+                    Here is my [Github address](https://github.com/zhuqingguang).`
         });
         break;/*
         case 'your hobbies':
@@ -161,7 +161,7 @@ var myBot = new BotUI('hello-world');
           return myBot.message.add({
             delay: 1000,
             loading: true,
-            content: `i'm sorry! i don't love you because i love Yuer.`
+            content: `i'm sorry! i don't love you because i love JavaScript.`
           })
 
           break;
@@ -169,7 +169,7 @@ var myBot = new BotUI('hello-world');
             return myBot.message.add({
               delay: 1000,
               loading: true,
-              content: `i don't love you too, because i love Yuer.`
+              content: `i don't love you too, because i love JavaScript.`
             })
         default:
 
