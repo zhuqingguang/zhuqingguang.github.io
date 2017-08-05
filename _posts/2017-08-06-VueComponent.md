@@ -18,13 +18,13 @@ categories: [Web]
 <!-- more -->
 
 <script src="https://unpkg.com/vue@2.4.2"></script>
+
 ## 组件的基本使用
 ### 注册组件
 注册组件就是利用``Vue.component()``方法，先传入一个自定义组件的名字，然后传入这个组件的配置。
-```js
-
+```
  Vue.component('mycomponent',{
-    template: '<div>这是一个自定义组件,message的内容是：{{message}}</div>',
+    template: `<div>这是一个自定义组件,message的内容是：{{message}}</div>`,
     data () {
       return {
         message: 'hello world'
@@ -32,13 +32,14 @@ categories: [Web]
     }
   })
 ```
+
 如上方式，就已经创建了一个自定义组件，然后就可以在Vue实例挂在的DOM元素中使用它。
 <div id="app">
     <mycomponent></mycomponent>
 </div>
 <script>
       Vue.component('mycomponent',{
-        template: '<tr>这是一个自定义组件,message的内容是：{{message}}</tr>',
+        template: `<tr>这是一个自定义组件,message的内容是：{{message}}</tr>`,
         data () {
           return {
             message: 'hello world'
