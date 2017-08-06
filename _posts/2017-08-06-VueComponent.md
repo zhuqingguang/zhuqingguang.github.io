@@ -508,7 +508,7 @@ Vue.component('mycomponent',{
     <script>
       Vue.component('my-component3', {
         template: `<input ref="input" type="text" :value="value" @input="checkInput($event.target.value)">`,
-        prop: ['value'],
+        props: ['value'],
         methods: {
           checkInput (value) {
             var hello = 'hello'
@@ -536,7 +536,7 @@ Vue.component('mycomponent',{
  <script>
     Vue.component('my-component3', {
         template: `<input ref="input" type="text" :value="value" @input="checkInput($event.target.value)">`,
-        prop: ['value'],
+        props: ['value'],
         methods: {
           checkInput (value) {
             var hello = 'hello'
