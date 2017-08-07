@@ -7,12 +7,9 @@ categories: [Vue]
 ---
 
 * content
-
 {:toc}
 
-
 看了Vue响应式原理的教程，知识点有点散，总结一下。[原文](https://cn.vuejs.org/v2/guide/reactivity.html)
-
 <!-- more -->
 
 {% raw %}
