@@ -6,7 +6,7 @@ title: "深刻理解Vue的组件"
 
 date: 2017-08-06
 
-categories: [JavaScript]
+categories: [Vue]
 
 
 ---
