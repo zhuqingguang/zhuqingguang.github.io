@@ -6,9 +6,9 @@ url: http://zhuqingguang.github.io
 resume_site: http://zhuqingguang.github.io/me/
 github: https://github.com/zhuqingguang/
 baseurl: ""  #根目录
-description: 平凡之路。（博客模板cppy自小可哒哒）
+description: 平凡之路。
 motto: 平凡之路。
-#motto: 平凡之路。（博客模板cppy自小可哒哒）
+#motto: 平凡之路。
 banner: 生如夏花之绚烂，死如秋叶之静美。
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
