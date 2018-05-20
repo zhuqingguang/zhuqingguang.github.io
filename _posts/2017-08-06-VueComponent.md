@@ -10,7 +10,7 @@ categories: [Vue]
 * content
 {:toc}
 
-<script src="https://unpkg.com/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 今天看了下Vue官网上关于组件的教程，感觉内容还挺多，现在把组件中基本的知识梳理一下。
 
