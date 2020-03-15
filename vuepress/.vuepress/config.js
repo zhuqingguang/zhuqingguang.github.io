@@ -5,6 +5,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }],
     ],
     base: '/docs/',
+    dest: 'docs',
     markdown: {
         lineNumbers: true
     },
