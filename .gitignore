@@ -1,3 +1,6 @@
 _site/
 .sass-cache/
 .vscode/
+
+/**/dist/
+/**/node_modules/
