@@ -4,8 +4,8 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
     ],
-    base: '/docs/',
-    dest: 'docs',
+    base: '/docs/learn/',
+    dest: 'docs/learn/',
     markdown: {
         lineNumbers: true
     },
