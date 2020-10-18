@@ -20,16 +20,24 @@
 
 title: 朱庆广的博客
 email: vac872089248@gmail.com
+author: Knissing Zhu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  朱庆广的个人博客, 总结 web 前端开发知识，包括 Javascript，Vue，webpack，Typescript，git 等.
+keywords: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zhuqingguang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zhuqingguang
-github_username:  zhuqingguang3
+github_username:  zhuqingguang
 permalink: /:year/:month/:day/:title/
 
+show_excerpts: true
+excerpt_separator:  '<!-- more -->' #文章摘要
+
+baidu_analytics: true
+# markdown: kramdown
+# kramdown:
+#   html_to_native: false
+highlighter: rouge
 minima:
   date_format: "%Y-%m-%d"
 
