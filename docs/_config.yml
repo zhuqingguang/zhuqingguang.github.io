@@ -34,9 +34,9 @@ show_excerpts: true
 excerpt_separator:  '<!-- more -->' #文章摘要
 
 baidu_analytics: true
-# markdown: kramdown
-# kramdown:
-#   html_to_native: false
+markdown: kramdown
+kramdown:
+  html_to_native: false
 highlighter: rouge
 minima:
   date_format: "%Y-%m-%d"
