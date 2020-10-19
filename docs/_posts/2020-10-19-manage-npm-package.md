@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "规范管理 npm 包"
+title: "使用 Git 和 Npm 规范管理 npm 包"
 date: 2020-10-19
 categories: [ npm ]
 ---
@@ -99,7 +99,7 @@ npm dist-tag ls package-name
 npm unpublish --force
 ```
 
-## npm version 运行流程
+## npm 变更版本的运行流程
 > 本部分为扩展内容。
 
 在运行 `version` 命令时，npm 会到 package.json 的 `script` 属性中寻找三个命令:
@@ -120,4 +120,47 @@ npm unpublish --force
 
 
 可以注意到，在上述步骤中，我们如果在脚本中更改了本地的文件，需要使用 `git add` 将其加入到暂存区中，这样 npm 在执行 commit 操作时才会把这些文件提交进去。
+
+## 管理 Git 标签
+> 本部分为扩展内容。
+
+下面是 Git 标签操作的基本方法。
+
+### 添加标签
+添加 **轻量标签**：
+```bash
+git tag <tag name>
+```
+
+添加标注标签
+```bash
+git tag -a <tag name> -m <描述>
+```
+
+把标签推送到远端
+```bash
+git push origin <tag name>
+```
+
+把所有标签推送到远端
+```bash
+git push origin --tags
+```
+
+### 删除标签
+删除本地标签：
+```bash
+git tag -d <tag name>
+```
+
+删除远程仓库的标签
+```bash
+git push origin :refs/tags/<tag name>
+```
+这行命令表示把一个空的指针推送到远端的指定标签。
+
+### 查看某个具体的标签
+```bash
+git show <tag name>
+```
 
