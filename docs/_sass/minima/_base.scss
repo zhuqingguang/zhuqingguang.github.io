@@ -26,6 +26,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -94,7 +95,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: 600;
+  font-family: PT Serif;
   code {
     font-size: 0.8em;
   }
@@ -161,6 +163,7 @@ code {
 p {
   > code {
     white-space: nowrap;
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
   }
 }
 
