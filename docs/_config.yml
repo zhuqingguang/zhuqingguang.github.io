@@ -29,6 +29,8 @@ url: "https://zhuqingguang.github.io" # the base hostname & protocol for your si
 twitter_username: zhuqingguang
 github_username:  zhuqingguang
 permalink: /:year/:month/:day/:title/
+header_pages:
+  - about.md
 
 show_excerpts: true
 excerpt_separator:  '<!-- more -->' #文章摘要
@@ -48,6 +50,8 @@ sass:
 # theme: minima
 plugins:
   - jekyll-feed
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
