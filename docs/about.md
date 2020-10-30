@@ -5,4 +5,3 @@
 layout: default
 ---
 
-## 资源收集
