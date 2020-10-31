@@ -1,0 +1,34 @@
+{
+  "name": "zhuqingguang.github.io",
+  "version": "1.0.0",
+  "description": "朱庆广的博客",
+  "main": "",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:serve": "cd docs && bundle exec jekyll serve --open",
+    "docs:build": "cd docs && bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuqingguang/zhuqingguang.github.io.git"
+  },
+  "keywords": [
+    "朱庆广",
+    "博客",
+    "blog",
+    "frontend",
+    "css",
+    "typescript",
+    "javascript",
+    "vue"
+  ],
+  "author": "Knissing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuqingguang/zhuqingguang.github.io/issues"
+  },
+  "homepage": "https://github.com/zhuqingguang/zhuqingguang.github.io#readme"
+}
