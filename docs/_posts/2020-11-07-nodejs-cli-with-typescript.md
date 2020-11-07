@@ -201,6 +201,71 @@ npm start
 3. 使用 `tsc --watch` 自动监听文件变动并重新编译；
 4. 运行注册过的命令，查看效果。
 
+## 配置ESLint
+使用 ESLint 校验我们的代码，可以避免一些低级错误。而 TypeScript 现在推荐采用 ESLint 来检查代码。我们可以为我们的工程配置 ESLint。
+
+### 安装依赖
+首先安装依赖：
+
+```bash
+npm i -D eslint @typescript-eslint/parser  @typescript-eslint/eslint-plugin
+```
+
+- @typescript-eslint/parser 是用来解析 TypeScript 代码的，类似于 @babel/parser；
+- @typescript-eslint/eslint-plugin 是 ESLint 插件，用来配置具体的检查规则。
+
+### 设置配置
+在根目录下创建 `.eslintrc`, 写入以下内容：
+```json
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-console": "error"
+    },
+    // set eslint env
+    "env": {
+        "node": true
+    }
+}
+```
+
+- `root: true` 表示当前目录就是寻找 ESLint 的最终配置，这样 ESLint 就不会再往上层寻找配置；
+- `parse` 指定了使用 `@typescript-eslint/parser` 来解析我们的 TypeScript 代码；
+- `plugins` 指定使用的 ESLint 插件；
+- `extends` 指定了额外使用的规则配置。插件指定了一系列自定义的规则配置，只有在 `extends` 中指定才会生效。
+- `rules` 中可以扩展我们自己的规则。
+- `env` 中可以指定我们代码运行的环境，这样就可以自动判断某些代码是不是有错误。比如上述配置了 `node: true` ，我们在使用 `require` 的时候就不会报错了。
+
+### 运行校验命令
+在 `package.json` 的 `script` 中写入：
+```json
+{
+    "script": {
+        "lint": "eslint ./src --ext .ts"
+    }
+}
+```
+上述命令指定了对 `./src` 目录下扩展名为 `.ts` 的文件进行校验。
+
+然后运行 `npm run lint`，会发现控制台出现报错，我们的 ESLint 已经生效了。
+> 配置 VSCode 的 ESLint 插件，编辑器在开发时就会自动提示有问题的代码，帮助我们编写符合规范的代码。
+
+### 忽略某些文件
+我们可以指定某些目录下的文件不进行校验,在当前目录下创建 `.eslintignore` ,类似 `.gitignore`,然后在里面写入需要忽略的目录或文件：
+```
+node_modules
+```
+
+至此，ESLint 也配置完成了！
 
 以上就是搭建 Nodejs 命令行的 TypeScript 开发环境的全部内容了，希望能帮到大家~
 
