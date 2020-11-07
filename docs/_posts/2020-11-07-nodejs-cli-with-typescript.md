@@ -172,8 +172,6 @@ node-cli-demo
 // Your cli is running.
 ```
 
-大功告成！
-
 ## 自动监听文件变动
 我们希望每次更改了 `.ts` 文件之后，不必手动执行 `npm run build` 就能看到最新的效果，可以使用 typescript 的 `--watch` 选项，在 `package.json` 中的 `script` 中增加 `start` 命令：
 ```diff
@@ -192,6 +190,9 @@ npm start
 然后对 `src/index.ts` 文件做一些更改，另开一个控制台窗口，运行 `node-cli-demo`，会发现打印的内容已经更新了。
 这样我们在开发时就只需要关注代码编写，而不用考虑编译的问题了。
 
+接下来我们就可以在 `src` 文件里面写我们的具体代码了！
+
+**注：** 本文的 demo 代码可以在 [github](https://github.com/zhuqingguang/playground/tree/master/typescript-cli) 上查看。为了避免创建很多仓库，我将其放到了一个仓库的子目录里面。
 
 ## 总结
 使用 TypeScript 开发 Nodejs 命令行的流程如下：

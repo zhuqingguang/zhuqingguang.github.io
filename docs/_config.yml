@@ -22,7 +22,7 @@ title: 朱庆广的博客
 email: vac872089248@gmail.com
 author: Knissing Zhu
 description: >- # this means to ignore newlines until "baseurl:"
-  朱庆广的个人博客, 总结 web 前端开发知识，包括 Javascript，Vue，webpack，Typescript，git 等.
+  总结 web 前端开发知识，包括 Javascript，Vue，webpack，Typescript，git 等.
 keywords: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zhuqingguang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
