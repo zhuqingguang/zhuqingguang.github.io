@@ -23,6 +23,7 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+            <a class="page-link icon-link" target="_blank" href="https://github.com/{{ site.github_username }}">{% include icon-github.svg %}</a>
         </div>
       </nav>
     {%- endif -%}

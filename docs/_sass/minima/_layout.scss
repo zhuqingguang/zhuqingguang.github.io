@@ -49,6 +49,10 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+    svg {
+      position: relative;
+      top: 4px;
+    }
   }
 
   @include media-query($on-palm) {
@@ -236,7 +240,7 @@
 .post-title {
   @include relative-font-size(2.2);
   letter-spacing: -1px;
-  line-height: 1;
+  line-height: 1.5;
   color: #2c3e50;
 
   @include media-query($on-laptop) {
