@@ -1,0 +1,4 @@
+<img class="fly-to-top" src="/assets/images/fly-to-top.png" alt="返回顶部" style="z-index:2;">
+<script>
+(function(){var timeout=null;var WAIT=200;var flyTop=document.querySelector('.fly-to-top');function func(){timeout=null;if(document.scrollingElement.scrollTop>400){flyTop.style.display='block'}else{flyTop.style.display='none'}}function onScroll(){if(timeout){clearTimeout(timeout);timeout=setTimeout(func,WAIT)}else{timeout=setTimeout(func,WAIT)}}window.addEventListener('scroll',onScroll);flyTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})})})()
+</script>
