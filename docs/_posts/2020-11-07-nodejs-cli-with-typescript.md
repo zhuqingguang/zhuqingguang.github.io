@@ -2,6 +2,7 @@
 layout: post
 title: 使用 Typescript 开发 Nodejs 命令行工具
 date: 2020-11-07
+updateDate: 2020-11-09
 categories: [ Nodejs ]
 ---
 
@@ -79,8 +80,11 @@ npm i typescript
 ```diff
 + "sourceMap": true,
 + "outDir": "lib",
++ "moduleResolution": "node",
 ```
-上述配置指定生成 `sourceMap` 文件，并将 TypeScript 的编译结果输出到 `./lib` 文件夹.
+- `"sourceMap": true` 指定生成 sourceMap，方便我们调试程序；
+- `"outDir": "lib"` 指定 TypeScript 将编译结果输出到 `./lib` 文件夹；
+- `"moduleResolution": "node"` 表明我们将使用 Nodejs 的方式去寻找模块。
 
 然后在与 `compilerOptions` 平级的地方增加选项：
 ```diff
