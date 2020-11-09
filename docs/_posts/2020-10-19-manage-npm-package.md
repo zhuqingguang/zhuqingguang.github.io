@@ -2,6 +2,7 @@
 layout: post
 title: "使用 Git 和 Npm 规范管理 npm 包"
 date: 2020-10-19
+updateData: 2020-11-09
 categories: [ npm ]
 ---
 
@@ -18,9 +19,6 @@ categories: [ npm ]
 > 打标签可以在任何时候进行，也不会对当前文件进行提交。
 
 ```bash
-// 创建一个轻量级标签
-git tag v0.0.1
-
 // 创建一个 annotated 标签
 git tag -a v0.0.2 -m "git tag for version 0.0.2"
 ```
@@ -28,6 +26,8 @@ git tag -a v0.0.2 -m "git tag for version 0.0.2"
 ```bash
 git tag -a v0.0.3 4ahhsd837hf9q8u34rf
 ```
+> **注意**: 使用 `git tag v0.0.1` 可以给提交打轻量标签，但是如果打了轻量标签，后续则不能使用 git 标签来自动更新 npm 包的版本号.
+
 ## 变更包的版本号
 git 提交后需要保证当前 git 的工作目录是干净的，即**没有变更的文件，也没有暂存的更改**。然后根据需要的变更版本运行 `npm version` 命令。
 
