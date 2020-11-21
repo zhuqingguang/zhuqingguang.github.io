@@ -12,13 +12,13 @@ categories: [ "Web API" ]
 在工作中会遇到一些需求场景，例如粘贴图片后自动上传，富文本编辑器内粘贴文本与图片，这些都与 Clipboard API 相关，在此讲解一下最新的 Clipboard API 的内容。
 <!-- more -->
 
-本文的示例页面: [Clipboard API demo](http://demo.aining.online/web-demo/clipboard)
-代码地址: [Github](https://github.com/zhuqingguang/vue3-playground/blob/master/src/modules/web-demo/clipboard/index.vue)
+本文的示例页面: [Clipboard API demo](http://demo.aining.online/web-demo/clipboard){:target="_blank"}
+代码地址: [Github](https://github.com/zhuqingguang/vue3-playground/blob/master/src/modules/web-demo/clipboard/index.vue){:target="_blank"}
 ## Clipboard API 的能力
 
 **Clipboard API** 是干什么的呢？
 
-借用 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) 的介绍，总结来说就是两点：
+借用 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API){:target="_blank"} 的介绍，总结来说就是两点：
 - 让我们能够读取和写入剪切板的内容；
 - 让我们能够监听复制、剪切和粘贴事件(即 **copy**、**cut**、**paste** )，并做一些额外处理。
 
@@ -47,7 +47,7 @@ navigator.clipboard.readText().then((text) => { console.log(text) });
 
 因为操作剪切板很容易泄露用户隐私，还会造成一些安全问题，所以调用操作剪切板的方法时会先向用户请求权限，用户同意之后才会往下进行，这个时候 promise 状态会变为 `resolved` ,如果用户拒绝，则该 promise 状态变为 `rejected` 。
 
-下面进行详细的示例讲解，可以点击 [**Demo**](http://demo.aining.online/web-demo/clipboard) 页面实际操作，理解会更加深入。本文的示例代码也可以从 [Github](https://github.com/zhuqingguang/vue3-playground/blob/master/src/modules/web-demo/clipboard/index.vue) 上查看。
+下面进行详细的示例讲解，可以点击 [**Demo**](http://demo.aining.online/web-demo/clipboard){:target="_blank"} 页面实际操作，理解会更加深入。
 > 由于 Clipboard API 还属于比较新的 API， 并非所有浏览器都支持，所以以下示例均在最新版的 Chrome 浏览器中运行。
 
 ### 读取文本
@@ -116,7 +116,7 @@ navigator.clipboard.read().then(async clipboardItems => {
     console.log(clipboardData.clipboardItemList)
 })
 ```
-本段代码的实际效果可以从[这里](http://demo.aining.online/web-demo/clipboard)看到。复制一个图片，点击 "获取剪切板MIME类型的内容" 按钮，下方会展示剪切板上所有类型的内容。
+本段代码的实际效果可以从[这里](http://demo.aining.online/web-demo/clipboard){:target="_blank"}看到。复制一个图片，点击 "获取剪切板MIME类型的内容" 按钮，下方会展示剪切板上所有类型的内容。
 
 ### 向 Clipboard 写入内容
 向 Clipboard 中写入文本和读取文本内容一样简单，使用 `writeText()` 即可，不再多说：
@@ -164,7 +164,7 @@ document.querySelector('.input').addEventListener('copy', () => {
 
 ### 拦截 `paste` 事件
 
-`event.clipboardData` 是一个 [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) 对象, 提供了两个方法：
+`event.clipboardData` 是一个 [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer){:target="_blank"} 对象, 提供了两个方法：
 - `getData(format)` : 读取剪切板的内容，需要传入要读取的内容类型，如 `getData('text/html')`；
 - `setData(format, data)` 方法来设置剪切板的内容，参数分别为表示类型的字符串和该类型对应的数据内容。
 
@@ -179,7 +179,7 @@ const onPaste = e => {
 document.querySelector('.input').addEventListener('paste', onPaste)
 ```
 
-`clipboardData` 有一个 `items` 属性，是 [DataTransferItem](https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem) 的列表，从中我们可以获取剪切板中的所有内容。利用 `items` 我们将在粘贴时获取剪切板中的图片，并进行如上传等处理：
+`clipboardData` 有一个 `items` 属性，是 [DataTransferItem](https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem){:target="_blank"} 的列表，从中我们可以获取剪切板中的所有内容。利用 `items` 我们将在粘贴时获取剪切板中的图片，并进行如上传等处理：
 
 ```js
 const onPaste = e => {
@@ -212,7 +212,7 @@ const onCopy = e => {
 document.querySelector('.input').addEventListener('copy', onCopy)
 ```
 
-上述示例均可以在[这里](http://demo.aining.online/web-demo/clipboard)查看。
+上述示例均可以在 Demo 页面查看。
 
 ## 总结
 Clipboard API 所覆盖的知识不多，总的来说有以下三方面：
