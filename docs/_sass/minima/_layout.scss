@@ -25,7 +25,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $purple-color;
   }
 }
 
@@ -225,6 +225,7 @@
 
 .post-link {
   display: block;
+  color: #2f2f2f;
   @include relative-font-size(1.5);
 }
 

@@ -88,9 +88,6 @@ npm i typescript
 
 然后在与 `compilerOptions` 平级的地方增加选项：
 ```diff
-"compilerOptions": {
-    ...
-},
 + "include": [
 +    "src/**/*"
 + ]
@@ -125,8 +122,10 @@ npx tsc
 3. 创建 npm 脚本
 在 `package.json` 中的 `script` 中增加一行脚本：  
 ```diff
-"script": {
-+    "build": "tsc"
+{
+    "script": {
++       "build": "tsc"
+    }
 }
 ```
 
