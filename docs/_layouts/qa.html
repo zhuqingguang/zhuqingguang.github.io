@@ -1,0 +1,31 @@
+---
+layout: default
+
+---
+
+<div class="home">
+    <!-- {%- if page.title -%}
+      <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%} -->
+  
+    {{ content }}
+    {%- if site.qas.size > 0 -%}
+      <ul class="post-list">
+        {%- for qa in site.qas -%}
+        <li>
+          {%- assign date_format = site.minima.date_format -%}
+          <h3 class="post-item">
+            <a class="post-link" href="{{ qa.url | relative_url }}">
+              {{ qa.title | escape }}
+            </a>
+          </h3>
+          <!-- {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%} -->
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  
+  </div>

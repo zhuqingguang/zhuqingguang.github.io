@@ -49,6 +49,9 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+    &.active {
+      color: $purple-color;
+    }
     svg {
       position: relative;
       top: 4px;

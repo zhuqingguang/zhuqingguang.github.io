@@ -51,6 +51,24 @@ sass:
 plugins:
   - jekyll-feed
 
+collections:
+  qas:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      nav: "/"
+  - 
+    scope:
+      path: "_qas"
+      type: "qas"
+    values:
+      nav: "/qas/"
+
 
 
 # Exclude from processing.
