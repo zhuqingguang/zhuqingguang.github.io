@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "docs:serve": "cd docs && bundle exec jekyll serve --open",
+    "docs": "cd docs && bundle exec jekyll serve",
     "docs:build": "cd docs && bundle exec jekyll build"
   },
   "repository": {
