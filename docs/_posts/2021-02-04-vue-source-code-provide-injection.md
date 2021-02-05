@@ -154,7 +154,7 @@ function normalizeInject (options: Object, vm: ?Component) {
             from: 'name'
           },
           name2: {
-            from: 'name',
+            from: 'name2',
             default: '',
           }
         }
@@ -350,7 +350,7 @@ export function resolveInject (inject: any, vm: Component): ?Object {
 - 如果提供了 `default` ，在没有寻找到 `provide` 值时会使用 `default` 提供的值。
 - `default` 可以是函数，在函数中可以通过 `this` 访问组件实例。
 
-但是，需要注意的是在 `default` 函数中通过 `this` 是访问不到 `props`、`data` 中的属性的，原因上面也说了，`inject` 的初始化在 `data`等之后(所以这里的 `this` 貌似没什么用)。
+但是，需要注意的是在 `default` 函数中通过 `this` 是访问不到 `props`、`data` 中的属性的，原因上面也说了，`inject` 的初始化在 `data`等之前(所以这里的 `this` 貌似没什么用)。
 
 ### 初始化 provide 的具体逻辑
 代码在 `src/core/instance/inject.js` 中:
